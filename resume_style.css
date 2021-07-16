@@ -1,0 +1,156 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.main-container {
+  margin: auto;
+  padding: 40px;
+  max-width: 850px;
+  background-color: #262626;
+  border-radius: 5px;
+}
+
+.header-section,
+.skills-section,
+.projects-section,
+.education-section,
+.employment-section {
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.info {
+  text-align: end;
+}
+img {
+  border: 3px solid #03dac6;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3,
+h2 {
+  color: #03dac6;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+.info > a,
+.info > div {
+  display: block;
+  margin-bottom: 8px;
+}
+
+a {
+  color: #03dac6;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+.skills-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+.project-title,
+.school-title,
+.job-title {
+  font-size: large;
+}
+
+.school-title,
+.job-title {
+  display: flex;
+  justify-content: space-between;
+}
+.job-title div:nth-child(2) {
+  text-align: center;
+}
+.job-title div:last-child {
+  text-align: right;
+}
+.job-title div {
+  flex: 1;
+}
+ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.skills-list {
+  list-style-type: none;
+}
+@media (max-width: 700px) {
+  h1 {
+    margin-bottom: 0px;
+  }
+  h3 {
+    margin-top: 0px;
+  }
+  .profile {
+    flex-direction: column;
+  }
+  .info {
+    text-align: center;
+  }
+  #picture {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 570px) {
+  h1 {
+    margin-bottom: 0px;
+  }
+  h3 {
+    margin-top: 0px;
+  }
+  .profile {
+    flex-direction: column;
+  }
+  .info {
+    text-align: center;
+  }
+  #picture {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .skills {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .skills-list {
+    display: list-item;
+  }
+  .main-container {
+    padding: 15px;
+  }
+  @media (max-width: 490px) {
+    .job-title div{
+      text-align: start !important;
+    }
+    .school-title, .job-title {
+      flex-direction: column;
+  }
+  }
+}
